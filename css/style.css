@@ -9,6 +9,7 @@ body {
 
 
 .nav {
+	line-height: 40px;
 	overflow: hidden;
 	border:1px solid black;
 	width: 40px;

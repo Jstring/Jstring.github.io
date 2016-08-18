@@ -1,2 +1,0 @@
-# Jstring.github.io
-blog

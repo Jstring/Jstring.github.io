@@ -2,61 +2,161 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>JH</title>
 
-  <script src="./js/jquery-3.1.0.min.js"></script>
-  
-  <link href="./css/reset.css" rel="stylesheet">
-  <link href="./css/style.css" rel="stylesheet">
+	<script src="js/jquery-3.1.0.min.js"></script>
+	<script src="js/jquery.fullPage.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:300,400" rel="stylesheet">
+
 </head>
 
-
-
-<body>
-	<div class="wrap">
-	<!--
-		<div class="nav">
-			<div class="botton bt2">
-			2
-			</div>
-
-			<div class="botton bt1">
-			1
-			</div>
-
-		</div>
-
-		-->
-		<div class="nav">click!</div>
-		<div class="box">
-			<div class="box1 content">
-			
-			</div>
-
-			<div class="box2 content">
-			
-			</div>
-
-			<div class="box3 content">
+<div class="menu">
+		<div class="wrap">
+			<div class="left">
+				JH
 
 			</div>
-			
+			<div class="right">
+				<a href="#HOME">HOME</a>
+				<a href="#COMMERCIAL">COMMERCIAL</a>
+				<a href="#SNAP">SNAP</a>
+				<a href="#PERSONAL">PERSONAL WORK</a>
+				<a href="#CONTACT">CONTACT</a>
+
+			</div>
 
 		</div>
 
 	</div>
 
-  <script>
-    $('.nav').click(function(){
-      if($('.content').css('opacity')=='0'){
-          $('.content').animate({'opacity':'1'}, 500)
-      }
-      
-      else{$('.content').animate({'opacity':'0'}, 500);
-      };
+
+	<div id="fullpage">
+	    <div class="section" id="section0" data-anchor="HOME">
+	  		
+  			<div class="navBox">
+				<div class="shadowBar">
+				</div>
+
+	  			<a href="#COMMERCIAL">COMMERCIAL</a>
+				<a href="#SNAP">SNAP</a>
+				<a href="#PERSONAL">PERSONAL WORK</a>
+				<a href="#CONTACT">CONTACT</a>
+
+	  		</div>
+	    </div>
+
+	    <div class="section" id="section1" data-anchor="COMMERCIAL">
+    	
+		    <div class="slide">
+		    	<img src="./images/ildo.JPG"/>
+		    	
+		    </div>
+		    <div class="slide">
+		    	<img src="./images/IMG_9568.JPG"/>
+		    </div>
+		    <div class="slide">
+		    	<img src="./images/cock.JPG"/>
+		    </div>
+		    <div class="slide">
+		    	
+		    </div>
+			
+	    </div>
+
+	    <div class="section" id="section2" data-anchor="SNAP">
+	    	
+		    <div class="slide">
+		    	<img src="./images/IMG_1888.jpg"/> 
+		    </div>
+
+		    <div class="slide">
+			    <img src="./images/IMG_3782-2.jpg"/> 
+		    	
+		    </div>
+
+		    <div class="slide">
+		    	<img src="./images/IMG_4472.jpg"/> 
+		    </div>
+		    <div class="slide">
+		    	<img src="./images/DSC06888-2.jpg"/> 
+		    </div>
+		    <div class="slide">
+		    	<img src="./images/IMG_2467.jpg"/> 
+		    </div>
+		    <div class="slide">
+		    	<img src="./images/IMG_3300-2.jpg"/> 
+		    </div>
+			
+	    </div>
+
+	    <div class="section" id="section3" data-anchor="PERSONAL">
+    
+    		<div class="slide">
+		    	<img src="./images/IMG_9999.jpg"/> 
+		    </div>
+		    <div class="slide">
+		    	<img src="./images/IMG_9969.jpg"/> 
+		    </div>
+			
+
+		    <div class="slide">
+		    	<img src="./images/JH8_8765.jpg"/> 
+		    </div>
+		    <div class="slide"> 
+		    	<img src="./images/IMG_4399.jpg"/> 
+		    </div>
+		    <div class="slide">
+			    <img src="./images/IMG_7782.jpg"/> 
+		    </div>
+			
+	    </div>
+
+	    <div class="section" id="section4" data-anchor="CONTACT">
+	    	Instagram: jstring_ninety
+			
+	    </div>
 
 
-    });
-  </script>
+	</div>
+
+	<script>
+		$('#fullpage').fullpage({
+			sectionsColor: ['black','black' ,'black','black','black'],
+			 anchors: ['HOME', 'COMMERCIAL', 'SNAP', 'PERSONAL', 'CONTACT']
+		});
+
+		$('.navBox a').mouseover(function(){
+			if(0==$('.shadowBar').css('opacity')){
+				$('.shadowBar').animate({'opacity':'1'},250)
+			}
+			
+			else{
+
+				var targetY = $(this).position().top ;	
+				$('.shadowBar').stop().animate({'top':targetY+'px'},300)
+			
+
+			};
+		});
+
+		$('.navBox').mouseout(function(){
+			$('.shadowBar').animate({'opacity':'0'},250)
+		})
+
+
+	</script>
+
+
+<body>
+	
+
+
+
 </body>
+
+
+
 </html>

@@ -16,7 +16,7 @@
 <div class="menu">
 		<div class="wrap">
 			<div class="left">
-				JH
+				<a href="#HOME">JH</a>
 
 			</div>
 			<div class="right">
@@ -129,22 +129,64 @@
 		});
 
 		$('.navBox a').mouseover(function(){
+
+
+
+				var i=$(this).index();
+
+				$('.shadowBar').removeClass('step1');
+				$('.shadowBar').removeClass('step2');
+				$('.shadowBar').removeClass('step3');
+				$('.shadowBar').removeClass('step4');
+				$('.shadowBar').addClass('step'+i);
+
+
+
+			/*
 			if(0==$('.shadowBar').css('opacity')){
 				$('.shadowBar').animate({'opacity':'1'},250)
 			}
 			
 			else{
-
+				
 				var targetY = $(this).position().top ;	
 				$('.shadowBar').stop().animate({'top':targetY+'px'},300)
-			
+				console.log(targetY);
 
 			};
-		});
+		*/
 
-		$('.navBox').mouseout(function(){
-			$('.shadowBar').animate({'opacity':'0'},250)
+			$('.navBox a').mouseleave(function(){
+				$('.shadowBar').removeClass('step1');
+				$('.shadowBar').removeClass('step2');
+				$('.shadowBar').removeClass('step3');
+				$('.shadowBar').removeClass('step4');
+
+			});
+		});
+		
+
+		$('.right a').mouseover(function(){
+			$(this).css('background-size','80% 2px');
 		})
+
+		$('.right a').mouseout(function(){
+			$(this).css('background-size','0 2px');
+
+		})
+	
+		
+		$('.navBox a').mouseover(function(){
+			$(this).css('background-size','60% 3px');
+		})
+
+		$('.navBox a').mouseout(function(){
+			$(this).css('background-size','0 3px');
+		})
+
+
+		
+
 
 
 	</script>

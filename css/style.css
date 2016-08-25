@@ -11,11 +11,12 @@ body {
 .menu .left {
 	float:left;
 	color:#fff;
-	
+	z-index: 100;
 	font-size:15px;
 }
 
 .menu .right{
+	z-index: 100;
 	float: right;
 	color: #fff;
 
@@ -29,8 +30,10 @@ body {
 	background-size: 0px 2px;
 	background-repeat: no-repeat;
 	background-position: center center;
-	transition: all 0.5s;
+	transition: all 1s ease;
 }
+
+
 .menu {
 	font-family: 'Roboto', sans-serif;
 	position:fixed;
@@ -41,10 +44,17 @@ body {
 	background: #000;
 	z-index:80;
 	line-height: 80px;
-	opacity: 0.8;
-
+	opacity: 0.8; 
+	transition: all 1s ease;
 }
 
+.menu.close{
+	height: 50px;
+	line-height: 50px;
+	opacity: 0.3
+
+		
+}
 .menu>.wrap {
 	overflow: hidden;
 }
@@ -56,6 +66,7 @@ body {
 	background-size:100%;
 
 }
+
 
 
 
@@ -79,7 +90,7 @@ body {
 	background-size: 0px 3px;
 	background-repeat: no-repeat;
 	background-position: center center;
-	transition: all 0.5s;
+	transition: all 200ms;
 
 }
 
@@ -110,8 +121,35 @@ body {
 	top:210px
 }
 
+.slide {
+	position: relative;
+}
+
 .slide img{
 	width:100%;
+}
+
+.about {
+
+	position:absolute;
+
+	width:300px ;
+	height: 120px;
+	background: #0E0C0C;
+	opacity: 0.8;
+	top:700px;
+	left: 100px;
+	border-radius: 10px;
+	font-size:15px;
+}
+
+span {
+	display: block;
+	padding: 15px 30px;
+	font-family: 'Roboto', sans-serif;
+	color:#F4F4F4;
+	line-height: 25px;
+
 }
 
 #section1>.slide {
@@ -124,10 +162,83 @@ body {
 	font-family: 'Roboto', sans-serif;
 	text-align: center;
 	font-size:25px;
+	position: relative;
 }
 
+#section4 a {
 
+}
 
+.snsBox {
+	position: absolute;
+	border-radius: 5px
+	background:white;
+	opacity: 0.4;
+	transition: all 200ms ease;
+	font-family: 'Roboto', sans-serif;
+
+}
+
+.box1 {
+	top: 21%;
+	left:50%;
+	text-align: center;
+	width:250px;
+	height: 500px;
+	border: solid white 5px;
+}
+
+.box2
+ {
+	top: 40%;
+	left:60%;
+	text-align: center;
+	width:450px;
+	height: 200px;
+	border: solid white 5px;
+
+}
+
+.box3
+ {
+	top: 55%;
+	left:20%;
+	text-align: center;
+	width:450px;
+	height: 280px;
+	border: solid white 5px;
+}
+
+.box4
+ {
+	top: 15%;
+	left:10%;
+	text-align: center;
+	width:350px;
+	height: 200px;
+	border: solid white 8px;
+	opacity: 1 !important
+}
+
+.box4 div {
+	padding-top:5px;
+}
+.box5
+ {	
+ 	position: absolute;
+	border-radius: 5px;
+ 	color: black;
+ 	z-index: 2;
+ 	background: black;
+	top: 15%;
+	left:10%;
+	text-align: center;
+	width:350px;
+	height: 200px;
+	border: solid white 8px;
+	transition: all 250ms ease;
+	opacity: 0.8;
+}
 
 
 

@@ -1,0 +1,154 @@
+/* 오버레이 공통 */
+body.noscroll { overflow: hidden !important; }
+
+#overlay { clear: both; position: fixed; width: 100%; height: 100%; overflow: hidden; top: 0; z-index: 1005; overflow-y: scroll; background-color: rgba(0,0,0,.9); visibility: hidden; opacity: 0; }
+#overlay.active { visibility: visible; opacity: 1; }
+#overlay .wrapper { position: absolute; display: table; width: 100%; clear: both; height: 100%; overflow: hidden; z-index: 2002; }
+#overlay .overlay-close { position: absolute; width: 100%; height: 100%; display: block; cursor: zoom-out; }
+#overlay .body { display: block; width: 640px; margin: 60px auto; position: relative; z-index: 30000; overflow: hidden; }
+
+#overlay .header { float: left; width: 100%; background-color: #fff; border-radius: 8px 8px 0 0; padding: 22px 30px 20px 30px; }
+#overlay .header h3 { float: left; font-size: 30px;  }
+#overlay .header h3.black { font-size: 24px; color: #000; font-weight: 400; margin-top: 4px; }
+#overlay .header h3.black u { font-weight: 600; }
+#overlay .header h3.blue { color: #3290f0; }
+
+#overlay .header .close { float: right; width: 26px; height: 26px; position: relative; margin-top: 6px; }
+#overlay .header .close u { display: block; width: 26px; height: 2px; background-color: #999;  position: absolute; left: 0; top: 12px; }
+#overlay .header .close u.a { transform: rotate(45deg); }
+#overlay .header .close u.b { transform: rotate(-45deg); }
+#overlay .header .close:hover u { background-color: #666; } 
+
+#overlay .content { float: left; width: 100%; background-color: #fff; border-radius: 0 0 8px 8px; padding: 0 30px; }
+#overlay .content.scroll { max-height: 480px; overflow-y: scroll; }
+
+#overlay .confirm { float: left; width: 100%; display: block; height: 70px; background-color: #3290f0; text-align: center; color: #fff; font-size: 25px; font-weight: 900; padding-top: 18px; text-transform: uppercase; border-radius: 8px; margin-top: 10px; }
+#overlay .confirm:hover { background-color: #1d7cdd; }
+
+/* 새 프로젝트 */
+#overlay.create ul { width: 100%; float: left; margin-bottom: 15px; overflow: hidden; }
+#overlay.create ul > li { width: 100%; float: left; margin-bottom: 15px; overflow: hidden; }
+#overlay.create ul > li h4 { display: block; font-size: 16px; font-weight: 600; color: #999; margin-bottom: 5px; }
+#overlay.create ul > li a { float: left; width: 280px; text-align: center; padding: 20px 0; border: 2px solid #e0e0e0; border-radius: 6px; overflow: hidden;}
+#overlay.create ul > li a.a { margin-right: 20px; }
+#overlay.create ul > li a strong { display: block; font-size: 22px; font-weight: 600; }
+#overlay.create ul > li a span { display: block; font-size: 12px; color: #999; line-height: 1.1em; margin-top: 5px; }
+#overlay.create ul > li a:hover {  border-color: #b2b2b2; }
+#overlay.create ul > li a.selected { background-color: #3290f0; border-color: #1573d4; }
+#overlay.create ul > li a.selected strong, #overlay.create ul > li a.selected span { color: #fff; }
+
+#overlay.create ul > li input[type="text"], #overlay.create ul > li textarea { width: 100%; height: 40px; border: 1px solid #e0e0e0; border-radius: 4px; font-size: 15px; padding-left: 15px; }
+#overlay.create ul > li input[type="text"]:focus, #overlay.create ul > li textarea:focus { border-color: #999; }
+
+#overlay.create ul > li textarea { height: 120px; padding: 10px 15px; }
+
+#overlay.create ul > li.title input[type="text"] { font-size: 20px; font-weight: 600; height: 50px; }
+
+#overlay.create ul > li.category input[type="text"] { width: 100%; height: 30px; font-size: 13px; padding-left: 10px; margin-top: 10px; }
+#overlay.create ol { float: left; width: 100%; }
+#overlay.create ol li { float: left; margin-right: 20px; }
+#overlay.create ol li label { cursor: pointer; float: left; color: #333; font-size: 15px; }
+#overlay.create ol li label:hover { color: #000; }
+#overlay.create ol li label input { float: left; }
+#overlay.create ol li label span { float: left; margin: 0px 0 0 8px; }
+
+/* 브랜치 */
+#overlay.branch .content { padding-bottom: 30px; }
+#overlay.branch .content .pic { float: left; width: 280px; height: 158px; background-size: cover; background-position: 50% 50%; margin-right: 20px; border-radius: 6px; }
+#overlay.branch .content ul { float: left; width: 280px; }
+#overlay.branch .content ul li { float: left; width: 100%; font-size: 18px; border-bottom: 1px solid #f0f0f0; padding-bottom: 10px; margin-bottom: 10px; color: #999; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+#overlay.branch .content ul li:last-child { border: 0; padding: 0; margin: 0; }
+#overlay.branch .content ul li span { color: #999; font-size: 13px; display: block; }
+#overlay.branch .content ul li strong { color: #000; }
+#overlay.branch .content ul li div { float: left; width: auto; margin-right: 20px; }
+#overlay.branch .content p { float: left; width: 100%; font-size: 12px; text-align: center; color: #999; margin-top: 20px; }
+#overlay.branch .content p a { color: #3290f0; text-decoration: underline; }
+#overlay.branch .content p a:hover { color: #1d7cdd; }
+#overlay.branch .addtional { float: left; width: 100%; text-align: center; margin-top: 30px; color: #fff; font-size: 15px; color: #ccc; }
+#overlay.branch .addtional > * { display: block; }
+#overlay.branch .addtional a { display: inline-block; text-transform: uppercase; text-decoration: underline; color: #fff; margin-top: 6px; font-weight: 600; }
+
+/* 평가 */
+#overlay.rate .inner-content {
+	float: left;
+	width: 100%;
+	margin-bottom: 30px;
+	border: 1px solid #e0e0e0;
+	border-radius: 6px;
+	overflow: hidden;
+}
+#overlay.rate .inner-content ul { clear: both; margin: 0 auto; }
+#overlay.rate .inner-content .br-wrapper { float: left; width: 100%; text-align: center; }
+#overlay.rate .inner-content .br-widget { clear: both; width: 280px; margin: 10px auto; overflow: hidden; }
+#overlay.rate .inner-content .br-widget a { float: left; width: 55px; height: 52px; background-image: url(../img/item_star_rate.png); background-size: cover; background-position: 0 0; }
+#overlay.rate .inner-content .br-widget a.br-selected { background-position: -45px 0; }
+#overlay.rate .inner-content .br-widget a.br-current { background-position: -45px 0; }
+#overlay.rate .inner-content .br-widget a.br-active { background-position: -45px 0; }
+#overlay.rate .inner-content textarea { float: left; width: 100%; height: 150px; padding: 20px; font-size: 15px; border-top: 1px solid #e0e0e0; }
+
+#overlay.rate .original { float: left; width: 100%; overflow: hidden; margin-bottom: 20px;}
+#overlay.rate .original .pic { float: left; width: 250px; height: 140px; background-size: cover; background-position: 50% 50%; border-radius: 4px; margin-right: 20px; }
+#overlay.rate .original .info { float: left; width: 300px; }
+#overlay.rate .original .info strong { float: left; width: 100%; font-size: 22px; margin-top: -4px; margin-bottom: 5px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+#overlay.rate .original .info i { width: 35px; height: 35px; margin-right: 8px; }
+#overlay.rate .original .info dl { float: left; width: 250px; }
+#overlay.rate .original .info dl dt { display: block; font-size: 15px; font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+#overlay.rate .original .info dl dd { display: block; font-size: 13px; color: #999; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+#overlay.rate .original .info dl dd u { color: #000; font-weight: 600; }
+#overlay.rate .original .info p { float: left; height: 68px; width: 100%; font-size: 11px; color: #999; margin-top: 6px; overflow: hidden;
+	display: box;
+	display: -webkit-box;
+	display: -moz-box;
+	line-clamp: 4;
+	-webkit-line-clamp: 4;
+	-moz-line-clamp: 4;
+	box-orient: vertical;
+	-webkit-box-orient: vertical;
+	-moz-box-orient: vertical;
+}
+
+/* 스크랩 */
+#overlay.scraps .content { padding: 0 20px; }
+#overlay.scraps #items-overlay { margin-bottom: 10px; }
+#overlay.scraps #items-overlay li { border: 3px solid #333; cursor: pointer; box-shadow: 0 0 0; }
+#overlay.scraps #items-overlay li:hover { border: 3px solid #3290f0; }
+#overlay.scraps #items-overlay li.selected { border: 3px solid #1573d4; }
+#overlay.scraps #items-overlay li .inner-selected {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(50,144,240,.9);
+	position: relative;
+	visibility: hidden;
+	opacity: 0;
+	background-image: url(../img/upload_scrap_selected.png);
+	background-size: 77px 56px;
+	background-position: 50% 50%;
+}
+
+#overlay.scraps #items-overlay li.selected .inner-box { background-image: none; opacity: .3; }
+#overlay.scraps #items-overlay li.selected .inner-selected { visibility: visible; opacity: 1; }
+
+
+/* 프로필 */
+#overlay.profile ul { float: left; width: 100%; margin-bottom: 10px; }
+#overlay.profile ul li { float: left; width: 100%; border-bottom: 1px solid #f0f0f0; padding: 0 0 20px 0; margin-bottom: 20px; }
+#overlay.profile ul li:last-child { border: 0; padding-bottom: 0;}
+#overlay.profile ul li i { float: left; width: 40px; height: 40px; margin-right: 10px; }
+#overlay.profile ul li .container { float: left; width: 530px; }
+#overlay.profile ul li strong { font-size: 15px; color: #999;	margin-top: 3px; display: block; }
+#overlay.profile ul li strong a:hover { color: #3290f0; }
+#overlay.profile ul li p { font-size: 13px; line-height: 1.3em; margin-top: 2px; display: block; }
+#overlay.profile ul li span { font-size: 12px; color: #999; margin-top: 4px; display: block; }
+
+/* 시크릿 프로젝트 */
+#overlay.secret .body { width: 320px; }
+#overlay.secret .content { padding-bottom: 30px; }
+#overlay.secret p { font-size: 16px; line-height: 1.3em;display: block; color: #666; margin-bottom: 10px; }
+#overlay.secret input[type="password"] { width: calc(100% - 85px); height: 40px; border: 1px solid #e0e0e0; border-radius: 4px; font-size: 15px; padding-left: 15px; }
+#overlay.secret input[type="password"]:focus { border-color: #999; }
+#overlay.secret input[type="submit"] { width: 80px; height: 40px; color: #fff; font-weight: 600; background-color: #3290f0; border-radius: 4px; font-size: 15px; margin-left: 5px; border: 0; }
+#overlay.secret input[type="submit"]:hover { background-color: #1d7cdd; }
+
+/* 사진 크게 보기 */
+#overlay.sliderzoom .body { width: 800px; }
+#overlay.sliderzoom img { display: block; width: 100%; cursor: ns-resize; }

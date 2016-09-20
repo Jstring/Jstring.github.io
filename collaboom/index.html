@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>collaboom</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+	<meta name="theme-color" content="#000000">
+	<link href="192.png" sizes="192x192" rel="icon" />
+	<link rel="stylesheet" href="assets/default.css" media="all" />
+	<link rel="stylesheet" href="assets/style.css" media="all" />
+	<link rel="stylesheet" href="assets/font.css" media="all" />
+	<link rel="stylesheet" href="assets/mobile.css" media="screen and (max-width: 670px)"/>
+</head>
+
+<body id="top"><!-- 우측 하단 scroll to top 버튼을 위한 아이디값 설정 -->
+	<nav>
+		<h1><a href=".">collaboom</a></h1>
+		<ul class="menu">
+			<li><a href="list_asset.html">Asset</a></li>
+			<li><a href="list_shot.html">Shot</a></li>
+			<li><a href="artist.html">Artist</a></li>
+		</ul>
+		<div class="right">
+			<div class="join"><a href="signup.html" class="signup button-blue-text">Sign Up</a><a href="login.html">Log In</a></div><!-- 비로그인 시 노출 -->
+			<input type="text" placeholder="Search..." class="search tr"><!-- 항상 노출 -->
+			<div class="me"><!-- 로그인 시 노출 -->
+				<p class="notifications tr"><span>14</span></p>
+				<p class="profile pp" style="background-image: url(img/profile_thumbnail.jpg);"></p>
+				<div class="layer-notifications">
+					<u class="edge"><i></i></u>
+					<h6>Notifications</h6>
+					<ul>
+						<li><i style="background-image: url(img/profile_thumbnail.jpg);" class="pp"><a href="profile.html"></a></i><dl><dt><a href="profile.html">Anton Kosolapov</a> branched <a href="project.html">Iron Man Armor: Mark 43</a></dt><dd>about an hours ago</dd></dl></li>
+						<li><i style="background-image: url(img/profile_thumbnail.jpg);" class="pp"><a href="profile.html"></a></i><dl><dt><a href="profile.html">Anton Kosolapov</a> branched <a href="project.html">Iron Man Armor: Mark 43</a></dt><dd>about an hours ago</dd></dl></li>
+						<li><i style="background-image: url(img/profile_thumbnail.jpg);" class="pp"><a href="profile.html"></a></i><dl><dt><a href="profile.html">Anton Kosolapov</a> branched <a href="project.html">Iron Man Armor: Mark 43</a></dt><dd>about an hours ago</dd></dl></li>
+					</ul>
+				</div>
+				<div class="layer-profile">
+					<u class="edge"><i></i></u>
+					<ul>
+						<li><a href="profile.html">View My Profile</a></li>
+						<li><a href="list_following.html">Following Feed</a></li>
+						<li class="split"></li>
+						<li><a href="edit_profile.html">Edit Profile</a></li>
+						<li><a href="account.html">Account Settings</a></li>
+						<li class="split"></li>
+						<li><a href=".">Log Out</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- 로그인 시 노출 --><div class="button">
+				<a href="wip.html" class="wip"><span>WIP</span><strong>2</strong></a>
+				<a class="create button-blue-grad"><span>Create</span></a>
+			</div>
+		</div>
+	</nav>
+	
+	<article id="home">
+		<section class="cover" style="background-image: url(img/cover.jpg);">
+			<div class="owner"><span>by <a href="profile.html">Danny Jones</a></span><i style="background-image: url(img/profile_thumbnail.jpg);" class="pp"><a href="profile.html"></a></i></div>
+			<div class="container">
+				<h2>Hello World!</h2>
+				<p>Join thousands of other collaboomer who take advantage of <br>features like domain support, unlimited posting, full logo support.</p>
+				<a href="#" class="button-blue-grad">Learn More</a>
+			</div>
+		</section>
+		<section class="content">
+			<div class="wrapper">
+				<h3>Asset Projects</h3>
+				<h4>A devious collection of undiscovered artists waiting to be found!</h4>
+				<ul id="items">
+					<li>
+						<div class="info">
+							<div class="pic" style="background-image: url(img/item_thumbnail.jpg);"><a href="project.html"></a></div>
+							<strong><a href="project.html">Stormtrooper Helmet Stormtrooper Helmet</a></strong>
+							<i style="background-image: url(img/profile_thumbnail.jpg);" class="pp"><a href="profile.html"></a></i>
+							<dl>
+								<dt><a href="project.html">Texture #9 Texture #9 Texture #9 Texture #9 Texture #9 Texture #9 Texture #9 Texture #9 Texture #9</a></dt>
+								<dd>by <a href="profile.html">Danny Jones Danny Jones Danny Jones Danny Jones Danny Jones Danny Jones Danny Jones Danny Jones Danny Jones</a></dd>
+							</dl>
+						</div>
+						<div class="bottom">
+							<div class="container">
+								<p class="left"></p>
+								<p class="right">
+									<a href="#" class="like"><i></i>84</a>
+									<a href="#" class="scrap"><i></i>5</a>
+								</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="info">
+							<div class="pic" style="background-image: url(img/item_thumbnail.jpg);"><a href="project.html"></a></div>
+							<strong><a href="project.html">Stormtrooper Helmet</a></strong>
+							<i style="background-image: url(img/profile_thumbnail.jpg);" class="pp"><a href="profile.html"></a></i>
+							<dl>
+								<dt><a href="project.html">Texture #9</a></dt>
+								<dd>by <a href="profile.html">Danny Jones</a></dd>
+							</dl>
+						</div>
+						<div class="bottom">
+							<div class="container">
+								<p class="left">2 Branches</p>
+								<p class="right">
+									<a href="#" class="like selected"><i></i>84</a>
+									<a href="#" class="scrap"><i></i>5</a>
+								</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="info">
+							<div class="pic" style="background-image: url(img/item_thumbnail.jpg);"><a href="project.html"></a></div>
+							<strong><a href="project.html">Stormtrooper Helmet</a></strong>
+							<i style="background-image: url(img/profile_thumbnail.jpg);" class="pp"><a href="profile.html"></a></i>
+							<dl>
+								<dt><a href="project.html">Texture #9</a></dt>
+								<dd>by <a href="profile.html">Danny Jones</a></dd>
+							</dl>
+						</div>
+						<div class="bottom">
+							<div class="container">
+								<p class="left">1 Branch <span>(You Branched)</span></p>
+								<p class="right">
+									<a href="#" class="like"><i></i>84</a>
+									<a href="#" class="scrap selected"><i></i>5</a>
+								</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="info">
+							<div class="pic" style="background-image: url(img/item_thumbnail.jpg);"><a href="project.html"></a></div>
+							<strong><a href="project.html">Stormtrooper Helmet</a></strong>
+							<i style="background-image: url(img/profile_thumbnail.jpg);" class="pp"><a href="profile.html"></a></i>
+							<dl>
+								<dt><a href="project.html">Texture #9</a></dt>
+								<dd>by <a href="profile.html">Danny Jones</a></dd>
+							</dl>
+						</div>
+						<div class="bottom">
+							<div class="container">
+								<p class="left"></p>
+								<p class="right">
+									<a href="#" class="like"><i></i>84</a>
+									<a href="#" class="scrap"><i></i>5</a>
+								</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="info">
+							<div class="pic" style="background-image: url(img/item_thumbnail.jpg);"><a href="project.html"></a></div>
+							<strong><a href="project.html">Stormtrooper Helmet</a></strong>
+							<i style="background-image: url(img/profile_thumbnail.jpg);" class="pp"><a href="profile.html"></a></i>
+							<dl>
+								<dt><a href="project.html">Texture #9</a></dt>
+								<dd>by <a href="profile.html">Danny Jones</a></dd>
+							</dl>
+						</div>
+						<div class="bottom">
+							<div class="container">
+								<p class="left"></p>
+								<p class="right">
+									<a href="#" class="like"><i></i>84</a>
+									<a href="#" class="scrap"><i></i>5</a>
+								</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="info">
+							<div class="pic" style="background-image: url(img/item_thumbnail.jpg);"><a href="project.html"></a></div>
+							<strong><a href="project.html">Stormtrooper Helmet</a></strong>
+							<i style="background-image: url(img/profile_thumbnail.jpg);" class="pp"><a href="profile.html"></a></i>
+							<dl>
+								<dt><a href="project.html">Texture #9</a></dt>
+								<dd>by <a href="profile.html">Danny Jones</a></dd>
+							</dl>
+						</div>
+						<div class="bottom">
+							<div class="container">
+								<p class="left"></p>
+								<p class="right">
+									<a href="#" class="like"><i></i>84</a>
+									<a href="#" class="scrap"><i></i>5</a>
+								</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<div class="more"><a href="list_asset.html">See All Asset Projects</a></div>
+				
+				
+				
+				<h3>Shot Projects</h3>
+				<h4>A devious collection of undiscovered artists waiting to be found!</h4>
+				<ul id="items">
+					<li>
+						<div class="info">
+							<div class="pic" style="background-image: url(img/item_thumbnail.jpg);"><a href="project.html"></a></div>
+							<strong><a href="project.html">Stormtrooper Helmet</a></strong>
+							<i style="background-image: url(img/profile_thumbnail.jpg);" class="pp"><a href="profile.html"></a></i>
+							<dl>
+								<dt><a href="project.html">Texture #9</a></dt>
+								<dd>by <a href="profile.html">Danny Jones</a></dd>
+							</dl>
+						</div>
+						<div class="bottom">
+							<div class="container">
+								<p class="left"></p>
+								<p class="right">
+									<a href="#" class="like"><i></i>84</a>
+									<a href="#" class="scrap"><i></i>5</a>
+								</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="info">
+							<div class="pic" style="background-image: url(img/item_thumbnail.jpg);"><a href="project.html"></a></div>
+							<strong><a href="project.html">Stormtrooper Helmet</a></strong>
+							<i style="background-image: url(img/profile_thumbnail.jpg);" class="pp"><a href="profile.html"></a></i>
+							<dl>
+								<dt><a href="project.html">Texture #9</a></dt>
+								<dd>by <a href="profile.html">Danny Jones</a></dd>
+							</dl>
+						</div>
+						<div class="bottom">
+							<div class="container">
+								<p class="left">2 Branches</p>
+								<p class="right">
+									<a href="#" class="like selected"><i></i>84</a>
+									<a href="#" class="scrap"><i></i>5</a>
+								</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="info">
+							<div class="pic" style="background-image: url(img/item_thumbnail.jpg);"><a href="project.html"></a></div>
+							<strong><a href="project.html">Stormtrooper Helmet</a></strong>
+							<i style="background-image: url(img/profile_thumbnail.jpg);" class="pp"><a href="profile.html"></a></i>
+							<dl>
+								<dt><a href="project.html">Texture #9</a></dt>
+								<dd>by <a href="profile.html">Danny Jones</a></dd>
+							</dl>
+						</div>
+						<div class="bottom">
+							<div class="container">
+								<p class="left">1 Branch <span>(You Branched)</span></p>
+								<p class="right">
+									<a href="#" class="like"><i></i>84</a>
+									<a href="#" class="scrap selected"><i></i>5</a>
+								</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="info">
+							<div class="pic" style="background-image: url(img/item_thumbnail.jpg);"><a href="project.html"></a></div>
+							<strong><a href="project.html">Stormtrooper Helmet</a></strong>
+							<i style="background-image: url(img/profile_thumbnail.jpg);" class="pp"><a href="profile.html"></a></i>
+							<dl>
+								<dt><a href="project.html">Texture #9</a></dt>
+								<dd>by <a href="profile.html">Danny Jones</a></dd>
+							</dl>
+						</div>
+						<div class="bottom">
+							<div class="container">
+								<p class="left"></p>
+								<p class="right">
+									<a href="#" class="like"><i></i>84</a>
+									<a href="#" class="scrap"><i></i>5</a>
+								</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="info">
+							<div class="pic" style="background-image: url(img/item_thumbnail.jpg);"><a href="project.html"></a></div>
+							<strong><a href="project.html">Stormtrooper Helmet</a></strong>
+							<i style="background-image: url(img/profile_thumbnail.jpg);" class="pp"><a href="profile.html"></a></i>
+							<dl>
+								<dt><a href="project.html">Texture #9</a></dt>
+								<dd>by <a href="profile.html">Danny Jones</a></dd>
+							</dl>
+						</div>
+						<div class="bottom">
+							<div class="container">
+								<p class="left"></p>
+								<p class="right">
+									<a href="#" class="like"><i></i>84</a>
+									<a href="#" class="scrap"><i></i>5</a>
+								</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="info">
+							<div class="pic" style="background-image: url(img/item_thumbnail.jpg);"><a href="project.html"></a></div>
+							<strong><a href="project.html">Stormtrooper Helmet</a></strong>
+							<i style="background-image: url(img/profile_thumbnail.jpg);" class="pp"><a href="profile.html"></a></i>
+							<dl>
+								<dt><a href="project.html">Texture #9</a></dt>
+								<dd>by <a href="profile.html">Danny Jones</a></dd>
+							</dl>
+						</div>
+						<div class="bottom">
+							<div class="container">
+								<p class="left"></p>
+								<p class="right">
+									<a href="#" class="like"><i></i>84</a>
+									<a href="#" class="scrap"><i></i>5</a>
+								</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<div class="more"><a href="list_shot.html">See All Shot Projects</a></div>
+				
+				
+				
+				<h3>Artists</h3>
+				<h4>A devious collection of undiscovered artists waiting to be found!</h4>
+				<ul id="items" class="artist">
+					<li>
+						<div class="info">
+							<div class="pic" style="background-image: url(img/item_thumbnail.jpg);"><a href="profile.html"></a></div>
+							<strong><a href="profile.html">Danny Jones</a></strong>
+							<b>Animator <u>(+3)</u></b>
+							<div id="star">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span class="half"></span>
+								<span class="none"></span>
+								<u>4.4</u>
+							</div>
+							<i style="background-image: url(img/profile_thumbnail.jpg);" class="pp"><a href="profile.html"></a></i>
+						</div>
+					</li>
+					<li>
+						<div class="info">
+							<div class="pic" style="background-image: url(img/item_thumbnail.jpg);"><a href="profile.html"></a></div>
+							<strong><a href="profile.html">Danny Jones</a></strong>
+							<b>Animator <u>(+3)</u></b>
+							<div id="star">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span class="half"></span>
+								<span class="none"></span>
+								<u>4.4</u>
+							</div>
+							<i style="background-image: url(img/profile_thumbnail.jpg);" class="pp"><a href="profile.html"></a></i>
+						</div>
+					</li>
+					<li>
+						<div class="info">
+							<div class="pic" style="background-image: url(img/item_thumbnail.jpg);"><a href="profile.html"></a></div>
+							<strong><a href="profile.html">Danny Jones</a></strong>
+							<b>Animator <u>(+3)</u></b>
+							<div id="star">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span class="half"></span>
+								<span class="none"></span>
+								<u>4.4</u>
+							</div>
+							<i style="background-image: url(img/profile_thumbnail.jpg);" class="pp"><a href="profile.html"></a></i>
+						</div>
+					</li>
+					<li>
+						<div class="info">
+							<div class="pic" style="background-image: url(img/item_thumbnail.jpg);"><a href="profile.html"></a></div>
+							<strong><a href="profile.html">Danny Jones</a></strong>
+							<b>Animator <u>(+3)</u></b>
+							<div id="star">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span class="half"></span>
+								<span class="none"></span>
+								<u>4.4</u>
+							</div>
+							<i style="background-image: url(img/profile_thumbnail.jpg);" class="pp"><a href="profile.html"></a></i>
+						</div>
+					</li>
+					<li>
+						<div class="info">
+							<div class="pic" style="background-image: url(img/item_thumbnail.jpg);"><a href="profile.html"></a></div>
+							<strong><a href="profile.html">Danny Jones</a></strong>
+							<b>Animator <u>(+3)</u></b>
+							<div id="star">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span class="half"></span>
+								<span class="none"></span>
+								<u>4.4</u>
+							</div>
+							<i style="background-image: url(img/profile_thumbnail.jpg);" class="pp"><a href="profile.html"></a></i>
+						</div>
+					</li>
+					<li>
+						<div class="info">
+							<div class="pic" style="background-image: url(img/item_thumbnail.jpg);"><a href="profile.html"></a></div>
+							<strong><a href="profile.html">Danny Jones</a></strong>
+							<b>Animator <u>(+3)</u></b>
+							<div id="star">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span class="half"></span>
+								<span class="none"></span>
+								<u>4.4</u>
+							</div>
+							<i style="background-image: url(img/profile_thumbnail.jpg);" class="pp"><a href="profile.html"></a></i>
+						</div>
+					</li>
+				</ul>
+				<div class="more"><a href="artist.html">See All Artists</a></div>
+			</div>
+		</section>
+		<footer>
+			<div class="main">
+				<a href="#"><strong>How It Works</strong><span>Learn more about collaboom</span></a>
+				<a href="#"><strong>FAQ Center</strong><span>Search the knowledge base</span></a>
+			</div>
+			<div class="sub"><a href="#">About Us</a>/<a href="#">Terms of Service</a>/<a href="#">Privacy Policy</a></div>
+			<div class="copy">© collaboom 2016</div>
+		</footer>
+	</article>
+	<a href="#top" id="scrolltop"></a>
+</body>
+</html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="assets/eq.status.js"></script>
+<script src="assets/eq.scroll.js"></script>

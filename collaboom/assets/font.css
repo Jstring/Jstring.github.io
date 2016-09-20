@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'CCL';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/regular.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'CCL';
+  font-style: normal;
+  font-weight: 600;
+  src: url(../fonts/bold.woff) format('woff');
+}

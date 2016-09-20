@@ -1,0 +1,95 @@
+.rangeslider,
+.rangeslider__fill {
+  display: block;
+  border-radius: 10px;
+}
+
+.rangeslider {
+  background: #fff;
+  position: relative;
+}
+
+.rangeslider--horizontal {
+  height: 10px;
+  width: 100%;
+}
+
+.rangeslider--vertical {
+  width: 20px;
+  min-height: 150px;
+  max-height: 100%;
+}
+
+.rangeslider--disabled {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+  opacity: 0.4;
+}
+
+.rangeslider__fill {
+  background: #3290f0;
+  position: absolute;
+}
+.rangeslider--horizontal .rangeslider__fill {
+  top: 0;
+  height: 100%;
+}
+.rangeslider--vertical .rangeslider__fill {
+  bottom: 0;
+  width: 100%;
+}
+
+.rangeslider__handle {
+  background: white;
+  border: 3px solid #fff;
+  cursor: pointer;
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  background-color: #3290f0;
+  border-radius: 100%;
+  box-shadow: 0 1px 3px rgba(0,64,129,.5), 0 2px 15px rgba(50,144,240,.3);
+  top: 0;
+  margin-top: -5px;
+}
+
+.rangeslider__handle:before {
+	position: absolute;
+	content: "Expensive!";
+	background-color: rgba(0,0,0,.9);
+	color: #fff;
+	font-size: 12px;
+	padding: 6px 0 0 0;
+	border-radius: 4px;
+	top: -38px;
+	text-align: center;
+	width: 72px;
+	height: 20px;
+	left: -19px;
+}
+
+.rangeslider__handle:after {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	top: -12px;
+	left: 12px;
+	border: 5px inset transparent;
+	border-top: 5px solid rgba(0,0,0,.9);
+}
+
+.rangeslider__handle:active {
+  background-size: 100%;
+}
+.rangeslider--horizontal .rangeslider__handle {
+  top: -10px;
+  touch-action: pan-y;
+  -ms-touch-action: pan-y;
+}
+.rangeslider--vertical .rangeslider__handle {
+  left: -10px;
+  touch-action: pan-x;
+  -ms-touch-action: pan-x;
+}
+

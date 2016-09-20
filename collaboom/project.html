@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Project View - collaboom</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+	<meta name="theme-color" content="#000000">
+	<link href="192.png" sizes="192x192" rel="icon" />
+	<link rel="stylesheet" href="assets/default.css" media="all" />
+	<link rel="stylesheet" href="assets/style.css" media="all" />
+	<link rel="stylesheet" href="assets/overlay.css" media="all" />
+	<link rel="stylesheet" href="assets/animation.css" media="all" />
+	<link rel="stylesheet" href="assets/font.css" media="all" />
+	<link rel="stylesheet" href="assets/mobile.css" media="screen and (max-width: 670px)"/>
+</head>
+
+
+<body class="multi-scroll"><!-- 사이드바 멀티 스크롤 관련 클래스 -->
+	<nav>
+		<h1><a href=".">collaboom</a></h1>
+		<ul class="menu">
+			<li><a href="list_asset.html">Asset</a></li>
+			<li><a href="list_shot.html">Shot</a></li>
+			<li><a href="artist.html">Artist</a></li>
+		</ul>
+		<div class="right">
+			<input type="text" placeholder="Search..." class="search">
+			<div class="me">
+				<p class="notifications tr"><span>14</span></p>
+				<p class="profile pp" style="background-image: url(img/profile_thumbnail.jpg);"></p>
+				<div class="layer-notifications">
+					<u class="edge"><i></i></u>
+					<h6>Notifications</h6>
+					<ul>
+						<li><i style="background-image: url(img/profile_thumbnail.jpg);" class="pp"><a href="profile.html"></a></i><dl><dt><a href="profile.html">Anton Kosolapov</a> branched <a href="project.html">Iron Man Armor: Mark 43</a></dt><dd>about an hours ago</dd></dl></li>
+						<li><i style="background-image: url(img/profile_thumbnail.jpg);" class="pp"><a href="profile.html"></a></i><dl><dt><a href="profile.html">Anton Kosolapov</a> branched <a href="project.html">Iron Man Armor: Mark 43</a></dt><dd>about an hours ago</dd></dl></li>
+						<li><i style="background-image: url(img/profile_thumbnail.jpg);" class="pp"><a href="profile.html"></a></i><dl><dt><a href="profile.html">Anton Kosolapov</a> branched <a href="project.html">Iron Man Armor: Mark 43</a></dt><dd>about an hours ago</dd></dl></li>
+					</ul>
+				</div>
+				<div class="layer-profile">
+					<u class="edge"><i></i></u>
+					<ul>
+						<li><a href="profile.html">View My Profile</a></li>
+						<li><a href="list_following.html">Following Feed</a></li>
+						<li class="split"></li>
+						<li><a href="edit_profile.html">Edit Profile</a></li>
+						<li><a href="account.html">Account Settings</a></li>
+						<li class="split"></li>
+						<li><a href=".">Log Out</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="button">
+				<a href="wip.html" class="wip"><span>WIP</span><strong>2</strong></a>
+				<a class="create button-blue-grad"><span>Create</span></a>
+			</div>
+		</div>
+	</nav>
+	
+	<article id="project">
+		<a class="show-sidebar">
+			<span>Show Project Information</span>
+			<strong>Stormtrooper Helmet Stormtrooper Helmet Stormtrooper Helmet Stormtrooper Helmet</strong>
+		</a>
+		<section class="slider">
+			<div class="wrapper">
+				<div id="slider" class="flexslider">
+					<ul class="slides">
+						<li><iframe src="https://player.vimeo.com/video/45188802?color=3290f0&title=0&byline=0&portrait=0" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></li>
+						<li><img src="img/item_thumbnail1.jpg"><div class="omask"></div></li>
+						<li><img src="img/item_thumbnail2.jpg"></li>
+						<li><img src="img/item_thumbnail3.jpg"></li>
+						<li><img src="img/item_thumbnail4.jpg"></li>
+						<li><img src="img/item_thumbnail5.jpg"></li>
+						<li><img src="img/item_thumbnail6.jpg"></li>
+						<li><img src="img/item_thumbnail7.jpg"></li>
+					</ul>
+				</div>
+				<div id="carousel" class="flexslider">
+					<i></i>
+					<ul class="slides">
+						<li style="background-image: url(img/item_thumbnail.jpg);"></li>
+						<li style="background-image: url(img/item_thumbnail1.jpg);"></li>
+						<li style="background-image: url(img/item_thumbnail2.jpg);"></li>
+						<li style="background-image: url(img/item_thumbnail3.jpg);"></li>
+						<li style="background-image: url(img/item_thumbnail4.jpg);"></li>
+						<li style="background-image: url(img/item_thumbnail5.jpg);"></li>
+						<li style="background-image: url(img/item_thumbnail6.jpg);"></li>
+						<li style="background-image: url(img/item_thumbnail7.jpg);"></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section class="header">
+			<div class="wrapper">
+				<div class="left">
+					<i style="background-image: url(img/profile_thumbnail.jpg);" class="pp"><a href="profile.html"></a></i>
+					<div class="info">
+						<h2>Modeling #3</h2>
+						<strong>by <a href="profile.html">Danny Jones</a></strong>
+						<span><b>Animator <u>(+3)</u></b> / <u>CG Artist at RISE</u></span>
+					</div>
+				</div>
+				<div class="right">
+					<div class="stat"><b>34</b> branches, <b>723</b> likes, <b>82</b> scraps</div>
+					<div class="button"><a class="branch"><span></span></a><a class="like"><span>Like</span></a><a class="scrap"><span>Scrap</span></a></div>
+					<!-- 버튼이 Selected 상태(클릭해보세요ㅎㅎ)일 경우 클래스가 삽입됩니다 -->
+				</div>
+			</div>
+		</section>
+		
+		<section class="content">
+			<div class="wrapper">
+				<div class="left">
+					<h3>54 Activities</h3>
+					<ul>
+						<li>
+							<i style="background-image: url(img/profile_thumbnail.jpg);" class="pp"><a href="profile.html"></a></i>
+							<div class="container"><textarea placeholder="Write a comment..."></textarea><input type="submit" value="Send" /></div>
+						</li>
+						<li>
+							<i style="background-image: url(img/profile_thumbnail.jpg);" class="pp"><a href="profile.html"></a></i>
+							<div class="container"><p><a href="profile.html">Justas Galaburda</a> branched this project.</p><span>about an hour ago</span></div>
+						</li>
+						<li>
+							<i style="background-image: url(img/profile_thumbnail.jpg);" class="pp"><a href="profile.html"></a></i>
+							<div class="container"><p><a href="profile.html">Dana Tanamachi</a> branched this project.</p><span>about 3 hours ago</span></div>
+						</li>
+						<li>
+							<i style="background-image: url(img/profile_thumbnail.jpg);" class="pp"><a href="profile.html"></a></i>
+							<div class="container"><p><a href="profile.html">Drew Melton</a> commented this project.</p><p class="comment">Hey Janna, always the first to watch ;-) thanks! Los Angeles looks pretty deserted. Most of the time people drive, they don't walk in the streets, there is not much street / neighbor life. I think it's fascinating visually speaking.</p><span>about an hour ago</span><u><a href="#">Delete</a></u></div>
+						</li>
+						<li>
+							<i style="background-image: url(img/profile_thumbnail.jpg);" class="pp"><a href="profile.html"></a></i>
+							<div class="container"><p><a href="profile.html">Danny Jones</a> created this project.</p><span>about an hour ago</span></div>
+						</li>
+					</ul>
+					<div class="more"><a href="#">See More Activities</a></div>
+				</div>
+				<div class="right">
+					<ul>
+						<li>
+							<h4>Description</h4>
+							<div class="rm-branch">
+								<p>The armor has thicker plating compared to its predecessor, Mark 42. The Mark 43 armor features three colors: dark red, silver and gold. The colors are painted on the plates of the armor and each have specific areas and designations on the armors' pieces. The Mark 43's color design is mostly inverted from that of its predecessor, featuring more red plates than gold and the red having a darker hue. The armor has thicker plating compared to its predecessor, Mark 42. The Mark 43 armor features three colors: dark red, silver and gold. The colors are painted on the plates of the armor and each have specific areas and designations on the armors' pieces. The Mark 43's color design is mostly inverted from that of its predecessor, featuring more red plates than gold and the red having a darker hue.</p>
+							</div>
+							<span>Feb 21th, 2016</span>
+						</li>
+						<li class="tag">
+							<h4>3 Tags</h4>
+							<ol>
+								<li><a href="#">Iron Man</a></li>
+								<li><a href="#">Marvel</a></li>
+								<li><a href="#">Mark 43</a></li>
+							</ol>
+						</li>
+						<li class="file">
+							<h4>5 Files</h4>
+							<ol>
+								<li><i class="psd"><u></u></i><b>IronMan.psd <u>2mb</u></b></li>
+								<li><i class="psd"><u></u></i><b>Mark_43_Modeling.psd <u>2mb</u></b></li>
+								<li><i class="ai"><u></u></i><b>Textiles.ai <u>2mb</u></b></li>
+								<li><i class="pdf"><u></u></i><b>Instructions.pdf <u>2mb</u></b></li>
+							</ol>
+						</li>
+						<li class="manage">
+							<h4>Manage This Project</h4>
+							<a href="#" class="edit">Edit</a>
+							<a href="#" class="delete">Delete</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section class="menu">
+			<div class="wrapper">
+				<ul>
+					<li><a href="#" class="selected"><strong>All Sub Branches</strong><span>25</span></a></li>
+					<li><a href="#"><strong>Modeling</strong><span>17</span></a></li>
+					<li><a href="#"><strong>Texture</strong><span>102</span></a></li>
+					<li><a href="#"><strong>Rigging</strong><span>102</span></a></li>
+				</ul>
+			</div>
+		</section>
+		
+		<section class="related">
+			<div class="wrapper">
+				<ul id="items" class="related">
+					<li>
+						<div class="info">
+							<div class="pic" style="background-image: url(img/item_thumbnail.jpg);"></div>
+							<strong><a href="project.html">Stormtrooper Helmet Stormtrooper Helmet</a></strong>
+							<i style="background-image: url(img/profile_thumbnail.jpg);" class="pp"><a href="profile.html"></a></i>
+							<dl>
+								<dt><a href="project.html">Texture #9</a></dt>
+								<dd>by <a href="#">Danny Jones</a></dd>
+							</dl>
+						</div>
+						<div class="bottom">
+							<div class="container">
+								<p class="left"></p>
+								<p class="right">
+									<a href="#" class="like"><i></i>84</a>
+									<a href="#" class="scrap"><i></i>5</a>
+								</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="info">
+							<div class="pic" style="background-image: url(img/item_thumbnail.jpg);"></div>
+							<strong><a href="project.html">Stormtrooper Helmet</a></strong>
+							<i style="background-image: url(img/profile_thumbnail.jpg);" class="pp"><a href="profile.html"></a></i>
+							<dl>
+								<dt><a href="project.html">Texture #9</a></dt>
+								<dd>by <a href="#">Danny Jones</a></dd>
+							</dl>
+						</div>
+						<div class="bottom">
+							<div class="container">
+								<p class="left">2 Branches</p>
+								<p class="right">
+									<a href="#" class="like selected"><i></i>84</a>
+									<a href="#" class="scrap"><i></i>5</a>
+								</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="info">
+							<div class="pic" style="background-image: url(img/item_thumbnail.jpg);"></div>
+							<strong><a href="project.html">Stormtrooper Helmet</a></strong>
+							<i style="background-image: url(img/profile_thumbnail.jpg);" class="pp"><a href="profile.html"></a></i>
+							<dl>
+								<dt><a href="project.html">Texture #9</a></dt>
+								<dd>by <a href="#">Danny Jones</a></dd>
+							</dl>
+						</div>
+						<div class="bottom">
+							<div class="container">
+								<p class="left">1 Branch <span>(You Branched)</span></p>
+								<p class="right">
+									<a href="#" class="like"><i></i>84</a>
+									<a href="#" class="scrap selected"><i></i>5</a>
+								</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="info">
+							<div class="pic" style="background-image: url(img/item_thumbnail.jpg);"></div>
+							<strong><a href="project.html">Stormtrooper Helmet</a></strong>
+							<i style="background-image: url(img/profile_thumbnail.jpg);" class="pp"><a href="profile.html"></a></i>
+							<dl>
+								<dt><a href="project.html">Texture #9</a></dt>
+								<dd>by <a href="#">Danny Jones</a></dd>
+							</dl>
+						</div>
+						<div class="bottom">
+							<div class="container">
+								<p class="left"></p>
+								<p class="right">
+									<a href="#" class="like"><i></i>84</a>
+									<a href="#" class="scrap"><i></i>5</a>
+								</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="info">
+							<div class="pic" style="background-image: url(img/item_thumbnail.jpg);"></div>
+							<strong><a href="project.html">Stormtrooper Helmet</a></strong>
+							<i style="background-image: url(img/profile_thumbnail.jpg);" class="pp"><a href="profile.html"></a></i>
+							<dl>
+								<dt><a href="project.html">Texture #9</a></dt>
+								<dd>by <a href="#">Danny Jones</a></dd>
+							</dl>
+						</div>
+						<div class="bottom">
+							<div class="container">
+								<p class="left"></p>
+								<p class="right">
+									<a href="#" class="like"><i></i>84</a>
+									<a href="#" class="scrap"><i></i>5</a>
+								</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="info">
+							<div class="pic" style="background-image: url(img/item_thumbnail.jpg);"></div>
+							<strong><a href="project.html">Stormtrooper Helmet</a></strong>
+							<i style="background-image: url(img/profile_thumbnail.jpg);" class="pp"><a href="profile.html"></a></i>
+							<dl>
+								<dt><a href="project.html">Texture #9</a></dt>
+								<dd>by <a href="#">Danny Jones</a></dd>
+							</dl>
+						</div>
+						<div class="bottom">
+							<div class="container">
+								<p class="left"></p>
+								<p class="right">
+									<a href="#" class="like"><i></i>84</a>
+									<a href="#" class="scrap"><i></i>5</a>
+								</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<div class="more"><a href="#">See All Asset Projects</a></div>
+			</div>
+		</section>
+
+	<footer>
+		<div class="main">
+			<a href="#"><strong>How It Works</strong><span>Learn more about collaboom</span></a>
+			<a href="#"><strong>FAQ Center</strong><span>Search the knowledge base</span></a>
+		</div>
+		<div class="sub"><a href="#">About Us</a>/<a href="#">Terms of Service</a>/<a href="#">Privacy Policy</a></div>
+		<div class="copy">© collaboom 2016</div>
+	</footer>
+	</article>
+
+	<article id="project-sidebar">
+		<div class="title">
+			<span>Project Information</span><a>Hide</a>
+			<h2>Stormtrooper Helmet</h2>
+			<h3>Asset Project</h3>
+		</div>
+		<div class="info">
+			<i style="background-image: url(img/profile_thumbnail.jpg);" class="pp"><a href="profile.html"></a></i>
+			<dl>
+				<dt>By <a href="#">Danny Jones Danny Jones Danny Jones</a></dt>
+				<dd><b>Animator <u>(+3)</u></b> / <u>CG Artist at RISE CG Artist at RISE CG Artist at RISE</u></dd>
+			</dl>
+			<div class="rm-project">
+				<p>A billionaire industrialist and genius inventor, Tony Stark (Robert Downey Jr.), is conducting weapons tests overseas, but terrorists kidnap him to force him to build a devastating weapon. Instead, he builds an armored suit and upends his captors. Returning to America, Stark refines the suit and uses it to combat crime and terrorism. A billionaire industrialist and genius inventor, Tony Stark (Robert Downey Jr.), is conducting weapons tests overseas, but terrorists kidnap him to force him to build a devastating weapon. Instead, he builds an armored suit and upends his captors. Returning to America, Stark refines the suit and uses it to combat crime and terrorism.</p>
+			</div>
+			<span>Feb 21th, 2016</span>
+			
+		</div>
+		<div class="category">
+			<h4>6 Business Categories</h4>
+			<ol>
+				<li><a href="#">VR</a></li>
+				<li><a href="#">AR</a></li>
+				<li><a href="#">Education</a></li>
+				<li><a href="#">Project Mapping</a></li>
+				<li><a href="#">School</a></li>
+				<li><a href="#">Video Art</a></li>
+			</ol>
+		</div>
+		<div class="tag">
+			<h4>4 Tags</h4>
+			<ol>
+				<li><a href="#">Iron Man</a></li>
+				<li><a href="#">Marvel</a></li>
+				<li><a href="#">Mark 43</a></li>
+			</ol>
+		</div>
+		<div class="map">
+			<h4>Project Map</h4>
+			<ul class="source">
+				<li>
+					<p>Used Asset</p>
+					<ol>
+						<li class="circle">
+							<a href="project.html">
+								<div class="layer-item">
+									<u class="edge"><i></i></u>
+									<div class="pic" style="background-image: url(img/item_thumbnail.jpg);"></div>
+									<strong>Modeling #2</strong>
+									<span>by Danny Jones</span>
+								</div>
+							</a>
+						</li>
+						<li class="circle">
+							<a href="project.html">
+								<div class="layer-item">
+									<u class="edge"><i></i></u>
+									<div class="pic" style="background-image: url(img/item_thumbnail.jpg);"></div>
+									<strong>Modeling #2</strong>
+									<span>by Danny Jones</span>
+								</div>
+							</a>
+						</li>
+						<li class="circle">
+							<a href="project.html">
+								<div class="layer-item">
+									<u class="edge"><i></i></u>
+									<div class="pic" style="background-image: url(img/item_thumbnail.jpg);"></div>
+									<strong>Modeling #2</strong>
+									<span>by Danny Jones</span>
+								</div>
+							</a>
+						</li>
+					</ol>
+				</li>
+				<li>
+					<p>Reference</p>
+					<ol>
+						<li class="circle">
+							<a href="project.html">
+								<div class="layer-item">
+									<u class="edge"><i></i></u>
+									<div class="pic" style="background-image: url(img/item_thumbnail.jpg);"></div>
+									<strong>Modeling #2</strong>
+									<span>by Danny Jones</span>
+								</div>
+							</a>
+						</li>
+						<li class="circle">
+							<a href="project.html">
+								<div class="layer-item">
+									<u class="edge"><i></i></u>
+									<div class="pic" style="background-image: url(img/item_thumbnail.jpg);"></div>
+									<strong>Modeling #2</strong>
+									<span>by Danny Jones</span>
+								</div>
+							</a>
+						</li>
+					</ol>
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<p>1  Original</p>
+					<ol>
+						<li class="circle done">
+							<a href="project.html">
+								<div class="layer-item">
+									<u class="edge"><i></i></u>
+									<div class="pic" style="background-image: url(img/item_thumbnail.jpg);"></div>
+									<strong>Modeling #2</strong>
+									<span>by Danny Jones</span>
+								</div>
+							</a>
+						</li>
+					</ol>
+				</li>
+				<li class="line"></li>
+				<li>
+					<p>4 Modeling</p>
+					<ol>
+						<li class="circle done">
+							<a href="project.html">
+								<div class="layer-item">
+									<u class="edge"><i></i></u>
+									<div class="pic" style="background-image: url(img/item_thumbnail.jpg);"></div>
+									<strong>Modeling #2</strong>
+									<span>by Danny Jones</span>
+								</div>
+							</a>
+						</li>
+						<li class="line connected"></li>
+						<li class="circle wip">
+							<a href="project.html">
+								<div class="layer-item">
+									<u class="edge"><i></i></u>
+									<div class="pic" style="background-image: url(img/item_thumbnail.jpg);"></div>
+									<strong>Modeling #2</strong>
+									<span>by Danny Jones</span>
+								</div>
+							</a>
+						</li>
+						<li class="line"></li>
+						<li class="circle wip you">
+							<a href="project.html">
+								<div class="layer-item">
+									<u class="edge"><i></i></u>
+									<div class="pic" style="background-image: url(img/item_thumbnail.jpg);"></div>
+									<strong>Modeling #2</strong>
+									<span>by Danny Jones</span>
+								</div>
+							</a>
+						</li>
+						<li class="line"></li>
+						<li class="circle"></li>
+						<li class="line"></li>
+						<li class="circle"></li>
+						<li class="line"></li>
+						<li class="circle"></li>
+						<li class="line"></li>
+						<li class="circle"></li>
+					</ol>
+				</li>
+			</ul>
+		</div>
+		<div class="activity">
+			<h4>17 Activities</h4>
+			<ul>
+				<li>
+					<i style="background-image: url(img/profile_thumbnail.jpg);" class="pp"><a href="profile.html"></a></i>
+					<div class="container post"><input type="text" placeholder="Write a comment..." /><input type="submit" value="Send" /></div>
+				</li>
+				<li>
+					<i style="background-image: url(img/profile_thumbnail.jpg);" class="pp"><a href="profile.html"></a></i>
+					<div class="container"><p><a href="profile.html">Justas Galaburda</a> branched this project.</p><span>about an hour ago</span></div>
+				</li>
+				<li>
+					<i style="background-image: url(img/profile_thumbnail.jpg);" class="pp"><a href="profile.html"></a></i>
+					<div class="container"><p><a href="#">Dana Tanamachi</a> branched this project.</p><span>about 3 hours ago</span></div>
+				</li>
+				<li>
+					<i style="background-image: url(img/profile_thumbnail.jpg);" class="pp"><a href="profile.html"></a></i>
+					<div class="container"><p><a href="#">Drew Melton</a> commented this project.</p><p class="comment">Hey Janna, always the first to watch ;-) thanks! Los Angeles looks pretty deserted. Most of the time people drive, they don't walk in the streets, there is not much street / neighbor life. I think it's fascinating visually speaking.</p><span>about an hour ago</span><u><a href="#">Delete</a></u></div>
+				</li>
+				<li>
+					<i style="background-image: url(img/profile_thumbnail.jpg);" class="pp"><a href="profile.html"></a></i>
+					<div class="container"><p><a href="#">Danny Jones</a> created this project.</p><span>about an hour ago</span></div>
+				</li>
+			</ul>
+		</div>
+	</article>
+
+	<article id="overlay" class="sliderzoom tr"><!-- 사진 확대 보기 오버레이 -->
+		<section class="wrapper">
+			<div class="overlay-close"></div>
+			<div class="body"><img src="img/item_thumbnail3.jpg"></div>
+		</section>
+	</article>	
+
+	<article id="overlay" class="branch tr"><!-- 브랜치 오버레이 -->
+		<section class="wrapper">
+			<div class="overlay-close"></div>
+			<div class="body">
+				<div class="header"><h3 class="blue">Branch this project</h3><a class="close"><u class="a tr"></u><u class="b tr"></u></a></div>
+				<div class="content">
+					<div class="pic" style="background-image: url(img/item_thumbnail.jpg);"></div>
+					<ul>
+						<li>
+							<span>Original Project</span>
+							<strong><a href="project.html">Stormtrooper Helmet Stormtrooper Helmet Stormtrooper Helmet</a></strong>
+						</li>
+						<li>
+							<span>Belong to</span>
+							<strong>Texture #3</strong> by <strong>Danny Jones Danny Jones Danny Jones Danny Jones</strong>
+						</li>
+						<li>
+							<div class="left"><span>Your Position</span><strong>Animation #4</strong></div>
+							<div class="right"><span>Asset License Fee</span><strong>15%</strong></div>
+						</li>
+					</ul>
+					<p>By submitting your project to collaboom, you acknowledge that you agree to<br>collaboom's <a href="#">Terms of Service</a> and <a href="#">Community Guidelines</a>.</p>
+				</div>
+				<a href="#" class="confirm tr">Make Branch</a>
+				<div class="addtional">
+					<p>Do you want to add another asset or you own creativity?</p>
+					<a href="#">Make A New Project</a>
+				</div>
+			</div>
+		</section>
+	</article>
+
+	<article id="overlay" class="create tr"><!-- 새 프로젝트 오버레이 -->
+		<section class="wrapper">
+			<div class="overlay-close"></div>
+			<div class="body">
+				<div class="header"><h3 class="blue">Create New Project</h3><a class="close"><u class="a tr"></u><u class="b tr"></u></a></div>
+				<div class="content">
+					<ul>
+						<li>
+							<h4>Project Type</h4>
+							<a href="#" class="a tr"><strong>Asset Project</strong><span>Make an Asset Project with <br>using your own characters</span></a>
+							<a href="#" class="b tr"><strong>Shot Project</strong><span>Make an Asset Project with <br>using various assets on collaboom</span></a>
+						</li>
+						<li class="title">
+							<h4>Project Title</h4>
+							<input type="text" value="Stormtrooper Helmets" />
+						</li>
+						<li>
+							<h4>Description</h4>
+							<textarea>A billionaire industrialist and genius inventor, Tony Stark (Robert Downey Jr.), is conducting weapons tests overseas, but terrorists kidnap him to force him to build a devastating weapon. Instead, he builds an armored suit and upends his captors. Returning to America, Stark refines the suit and uses it to combat crime and terrorism.</textarea>
+						</li>
+						<li class="category">
+							<h4>Business Category</h4>
+							<ol>
+								<li><label><input type="checkbox" /><span>AR</span></label></li>
+								<li><label><input type="checkbox" /><span>VR</span></label></li>
+								<li><label><input type="checkbox" /><span>Education</span></label></li>
+								<li><label><input type="checkbox" /><span>Projection Mapping</span></label></li>
+							</ol>
+							<input type="text" value="Custom #1, Custom #2" /><!-- 콤마로 구분 -->
+						</li>
+						<li>
+							<h4>Tags</h4>
+							<input type="text" value="Stormtrooper, Star Wars, Helmets" /><!-- 콤마로 구분 -->
+						</li>
+					</ul>
+				</div>
+				<a href="create.html" class="confirm tr">Get Started</a>
+			</div>
+		</section>
+	</article>
+</body>
+</html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="assets/jquery.flexslider.js"></script>
+<script src="assets/readmore.min.js"></script>
+<script src="assets/eq.status.js"></script>
+<script>
+$('.rm-branch p').readmore({
+  speed: 200,
+  collapsedHeight: 180,
+  moreLink: '<a href="#" class="button-blue-text">Read more</a>',
+  lessLink: ''
+});
+
+$('.rm-project p').readmore({
+  speed: 200,
+  collapsedHeight: 100,
+  moreLink: '<a href="#" class="button-blue-text">Read more</a>',
+  lessLink: ''
+});
+
+
+$(window).load(function() {
+  $('#carousel').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    itemWidth: 138,
+    itemMargin: 10,
+    asNavFor: '#slider'
+  });
+ 
+  $('#slider').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    sync: "#carousel"
+  });
+});
+</script>

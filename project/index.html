@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+    <head>
+        <title>D3 tutorial</title>
+        <script src="https://d3js.org/d3.v3.min.js"></script>
+    </head>
+    
+    <body>
+       
+        <h1 style="display:inline">세월호 날짜별 사망자 수</h1>    by 아동수호대
+        <script>
+            
+            d3.json("sewol.json", function(data) {
+            
+                var canvas = d3.select("body").append("svg")
+                                .attr("width",5000)
+                                .attr("height",500)
+                                .append("g") 
+                                
+
+                var heightScale = d3.scale.linear()
+                            .domain([0,38])
+                            .range([0,500]) ;
+
+                var color = d3.scale.linear()
+                        .domain([0,38])
+                        .range(["grey","pink"]) ;
+
+                
+   
+                                
+                canvas.selectAll("rect")
+                        .data(data)
+                        .enter()
+                            .append("rect")
+                            .attr("width", 15)
+                            .attr("height",  function(d) {return heightScale(d.Deaths);})
+                            .attr("x", function(d, i) {return i * 20;} )
+                            .attr("y", 20)
+                            .attr("fill", function(d) {return color(d.Deaths)}) ;
+
+
+                canvas.selectAll("text")
+                    .data(data)
+                    .enter()
+                        .append("text")
+                        .attr("fill","red")
+                        .attr("x", function(d, i) {return i * 20+1;} )
+                        .attr("y", 12)
+                        .text(function (d) {return d.Deaths ;})
+                        .attr("font-size","10px")
+                        .attr("font-weight","bold") ;
+
+
+       
+            })
+            
+            
+            
+        </script>
+    </body>
+</html>
